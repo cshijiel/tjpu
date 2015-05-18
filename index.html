@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>协同过滤推荐算法Demo-基于多维空间两向量相似度</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <!-- Bootstrap -->
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://v3.bootcss.com/examples/blog/blog.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .blog-nav-item-right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+  	<div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="#">给电影评价最多的用户</a>
+          <a class="blog-nav-item " href="#">与他看电影习惯最相似的用户</a>
+          <a class="blog-nav-item" href="#">推荐的电影</a>
+          <a class="blog-nav-item blog-nav-item-right" href="#">About</a>
+        </nav>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="blog-header">
+        <h1 class="blog-title">协同过滤推荐算法Demo</h1>
+        <p class="lead blog-description">给电影评价最多的用户</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>P.K.</th>
+                  <th>性别</th>
+                  <th>年龄</th>
+                  <th>职业</th>             
+                  <th>评论的电影</th>             
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>7</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div><!-- /.blog-post -->
+        </div><!-- /.blog-main -->
+      </div><!-- /.row -->
+    </div>
+
+
+    <footer class="blog-footer">
+      <p>Collaborative Filtering Demo by <a href="http://weibo.com/cshijiel">@cshijiel</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+</html>
